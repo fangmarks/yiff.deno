@@ -12,8 +12,7 @@ interface Post {
     md5: string;
     useragent: string;
 }
-export async function request(tags: string){
-    console.log(useragent)
+export async function search(tags: string){
     const response = await fetch(`https://e621.net/posts.json?limit=1&tags=order:random type:png type:jpg ${tags} -young`, {
         headers: {"User-Agent": useragent}
     })

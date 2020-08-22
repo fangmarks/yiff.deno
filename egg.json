@@ -1,11 +1,10 @@
 {
   "name": "esix",
   "description": "Deno e621 Search Library, Lio's first Deno Lib",
-  "version": "v0.0.1",
   "stable": false,
   "repository": "https://github.com/hokkqi/deno-esix",
   "files": [
-    "./**/*",
+    "./mod.ts",
     "./README.md"
   ]
 }
