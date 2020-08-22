@@ -10,7 +10,7 @@ Please do not expect good code for this, yet. esix is my first Deno Lib.
 
 ## Example Usage
 ```ts
-import {search} from 'esix-url';
+import {search} from 'https://x.nest.land/esix@0.0.4/mod.ts';
 
 search('<Your Search Tags>').then(r => console.log(r));
 // returns

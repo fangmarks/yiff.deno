@@ -4,7 +4,8 @@
   "stable": false,
   "repository": "https://github.com/hokkqi/deno-esix",
   "files": [
-    "./mod.ts",
-    "./README.md"
+    "./src/*",
+    "./README.md",
+    "./mod.ts"
   ]
 }
