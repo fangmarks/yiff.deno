@@ -1,19 +1,20 @@
 # esix
 
-`esix` is a [e621] Search Library. It's [Lio's] first Deno Library and will
-(most likely) recieve future updates to include more functions.
+`esix` is a [e621] Search Library. It's [Lio's] first Deno Library and (might) recieve future updates to include more functions.
 
 Please do not expect good code for this, yet. esix is my first Deno Lib.
 
-**IT DOES NOT RETURN IMAGES TAGGED WITH `-young` OR TAGS THAT ARE RELATED TO IT
-WITHIN THE E621 API** (cub, shota, .etc)
+Note: Posts with the Tag `young`, `cub`, etc. are automatically discarded by the E612, but I put `-young` into the request url anyways.
 
 ## Example Usage
 
 ```ts
-import { search } from "https://x.nest.land/esix@0.0.4/mod.ts";
+import { sauce, search } from "https://x.nest.land/esix@0.0.5/mod.ts";
 
-search("<Your Search Tags>").then((r) => console.log(r));
+// search("tags you want to search for", limit_of posts returned)
+const Search = await search("lio_(hokkqi)", 5);
+
+console.log(Search);
 ```
 
 [e621]: https://e621.net
